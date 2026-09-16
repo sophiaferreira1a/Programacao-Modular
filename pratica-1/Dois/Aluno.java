@@ -138,7 +138,7 @@ public class Aluno {
     }
 
     public String nomeCompleto() {
-        return nome + sobrenome;
+        return nome + " " + sobrenome;
     }
 
     public void exibirInformacoes() {
@@ -193,6 +193,6 @@ public class Aluno {
     }
 
     public boolean verificarPalara(String palavra) {
-        return sobrenome.contains(palavra);
+        return sobrenome.toUpperCase().contains(palavra.toUpperCase());
     }
 }
